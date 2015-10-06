@@ -1,0 +1,29 @@
+{
+  "name": "ant-colony",
+  "version": "0.0.0",
+  "description": "A clicker-type game where you manage an ant colony.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bloodyaugust/ant-colony"
+  },
+  "keywords": [
+    "clicker",
+    "game",
+    "html5"
+  ],
+  "author": "Greyson Richey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bloodyaugust/ant-colony/issues"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-compass": "^1.0.4",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
