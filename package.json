@@ -1,6 +1,6 @@
 {
   "name": "ant-colony",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "description": "A clicker-type game where you manage an ant colony.",
   "main": "index.html",
   "scripts": {
