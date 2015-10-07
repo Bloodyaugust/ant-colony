@@ -1,11 +1,23 @@
 (function (colony) {
-  var eggs = 0,
-    eggLayMultiplier = 1,
+  var drones = 1,
+    eggs = 0,
+    food = 100,
+    water = 100,
+    workers = 1,
+    warriors = 1,
     listeners = [];
+
+  var constants = {
+    eggRate: 1,
+    foodRate: 2,
+    waterRate: 1.5,
+  };
 
   colony.update = function (data) {
     if (data.type === 'heartbeat') {
-      eggs += 1 * eggLayMultiplier;
+      eggs += constants.eggRate * drones;
+      food += constants.foodRate * workers;
+      water += constants.waterRate * workers;
     }
 
     colony.emit();
@@ -17,7 +29,9 @@
 
   colony.emit = function () {
     var data = {
-      eggs: eggs
+      eggs: eggs,
+      food: food,
+      water: water,
     };
 
     for (var i = 0; i < listeners.length; i++) {

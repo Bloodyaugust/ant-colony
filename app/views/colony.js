@@ -1,8 +1,13 @@
 (function (colony) {
-  var $body = $('body');
+  var $body = $('body'),
+    $eggs = $body.find('.resources .eggs'),
+    $food = $body.find('.resources .food'),
+    $water = $body.find('.resources .water');
 
   colony.render = function (data) {
-    $body.html(data.eggs);
+    $eggs.html(data.eggs);
+    $food.html(data.food);
+    $water.html(data.water);
   };
 
   app.stores.colony.register(colony.render);
