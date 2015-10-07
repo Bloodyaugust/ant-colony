@@ -12,7 +12,7 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      files: ['app/*.js', 'app/*/*.js', 'templates/*', 'styles/*', 'index.html'],
+      files: ['app/*.js', 'app/*/*.js', 'templates/*', 'styles/*', 'styles/sass/*', 'index.html'],
       tasks: ['compass'],
       options: {
         livereload: true

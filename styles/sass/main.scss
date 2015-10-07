@@ -1,1 +1,125 @@
 @import "reset";
+
+$eggs: darken(gold, 10%);
+$food: brown;
+$water: darken(blue, 10%);
+
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100%;
+
+  .hide {
+    display: none;
+  }
+}
+
+section.main-content {
+  width: 80%;
+  margin: 0 10%;
+  text-align: center;
+}
+
+section.resources, section.units {
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+
+  div {
+    width: 33%;
+    float: left;
+  }
+
+  .eggs .amount {
+    color: $eggs;
+  }
+  .food .amount {
+    color: $food;
+  }
+  .water .amount {
+    color: $water;
+  }
+
+  .rate {
+    color: green;
+  }
+
+  .upkeep-food {
+    color: $food;
+  }
+  .upkeep-water {
+    color: $water;
+  }
+  .upkeep-food, .upkeep-water {
+    cursor: help;
+  }
+}
+
+section.spawn-tabs {
+  height: 60px;
+  margin-top: 25px;
+
+  div {
+    cursor: pointer;
+    border: solid lighten(blue, 10%) 2px;
+    border-radius: 4px;
+    float: left;
+    width: calc(33.3% - 4px);
+  }
+  div:hover {
+    background-color: grey;
+    color: white;
+  }
+  div.active {
+    background-color: grey;
+    color: white;
+  }
+
+  > span {
+    display: block;
+  }
+}
+
+section.controls {
+  > div > span {
+    cursor: pointer;
+    border: solid lighten(blue, 10%) 2px;
+    border-radius: 4px;
+    float: left;
+    width: calc(33.3% - 4px);
+
+    div {
+      display: inline;
+    }
+    div.cost {
+      color: $eggs;
+      cursor: help;
+    }
+  }
+  > div > span:active {
+    background-color: grey;
+    color: white;
+  }
+}
+
+section.history {
+  border: solid grey 2px;
+  border-radius: 4px;
+  margin-top: 25px;
+  height: 200px;
+  overflow-y: scroll;
+  padding: 2%;
+  width: 96%;
+   span {
+     display: block;
+     text-align: left;
+   }
+}
+
+header {
+  text-align: center;
+  margin: 0 10%;
+  background-color: lighten(blue, 20%);
+}

@@ -6,44 +6,53 @@
     <link rel="stylesheet" type="text/css" href="styles/css/main.css">
     <script src="//localhost:35729/livereload.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/numeral/min/numeral.min.js"></script>
     <script src="app/app.js" defer></script>
     <script src="app/dispatcher.js" defer></script>
     <script src="app/actions.js" defer></script>
     <script src="app/stores/colony.js" defer></script>
+    <script src="app/stores/ui.js" defer></script>
     <script src="app/views/colony.js" defer></script>
+    <script src="app/views/ui.js" defer></script>
   </head>
   <body>
     <header>Ant Colony v0.0.0</header>
     <section class="main-content">
       <section class="resources">
-        <div class="food"></div>
-        <div class="water"></div>
-        <div class="eggs"></div>
+        <div class="food">Food: <span class="amount">0</span>(<span class="rate">0</span>)</div>
+        <div class="water">Water: <span class="amount">0</span>(<span class="rate">0</span>)</div>
+        <div class="eggs">Eggs: <span class="amount">0</span>(<span class="rate">0</span>)</div>
       </section>
       <section class="units">
-        <div class="workers"></div>
-        <div class="drones"></div>
-        <div class="warriors"></div>
+        <div class="workers">Workers: <span class="amount">0</span>(-<span class="upkeep-food" title="upkeep">0</span>)(-<span class="upkeep-water" title="upkeep">0</span>)</div>
+        <div class="drones">Drones: <span class="amount">0</span>(-<span class="upkeep-food" title="upkeep">0</span>)(-<span class="upkeep-water" title="upkeep">0</span>)</div>
+        <div class="warriors">Warriors: <span class="amount">0</span>(-<span class="upkeep-food" title="upkeep">0</span>)(-<span class="upkeep-water" title="upkeep">0</span>)</div>
+      </section>
+      <section class="controls">
+        <section class="spawn-tabs">
+          <span>Spawn</span>
+          <div class="workers active" data-tab-unit="workers">Workers</div>
+          <div class="drones" data-tab-unit="drones">Drones</div>
+          <div class="warriors" data-tab-unit="warriors">Warriors</div>
+        </section>
+        <div class="workers" data-unit="worker">
+          <span class="min"><div class="amount">0</div>(<div class="cost" title="eggs">0</div>)</span>
+          <span class="half"><div class="amount">0</div>(<div class="cost" title="eggs">0</div>)</span>
+          <span class="max"><div class="amount">0</div>(<div class="cost" title="eggs">0</div>)</span>
+        </div>
+        <div class="drones hide" data-unit="drone">
+          <span class="min"><div class="amount">0</div>(<div class="cost" title="eggs">0</div>)</span>
+          <span class="half"><div class="amount">0</div>(<div class="cost" title="eggs">0</div>)</span>
+          <span class="max"><div class="amount">0</div>(<div class="cost" title="eggs">0</div>)</span>
+        </div>
+        <div class="warriors hide" data-unit="warrior">
+          <span class="min"><div class="amount">0</div>(<div class="cost" title="eggs">0</div>)</span>
+          <span class="half"><div class="amount">0</div>(<div class="cost" title="eggs">0</div>)</span>
+          <span class="max"><div class="amount">0</div>(<div class="cost" title="eggs">0</div>)</span>
+        </div>
       </section>
       <section class="history">
-        <span>Testing this mesage</span>
-        <span>Testing this mesage</span>
-        <span>Testing this mesage</span>
-        <span>Testing this mesage</span>
-        <span>Testing this mesage</span>
-        <span>Testing this mesage</span>
-        <span>Testing this mesage</span>
-        <span>Testing this mesage</span>
-        <span>Testing this mesage</span>
-        <span>Testing this mesage</span>
-        <span>Testing this mesage</span>
-        <span>Testing this mesage</span>
-        <span>Testing this mesage</span>
-        <span>Testing this mesage</span>
-        <span>Testing this mesage</span>
-        <span>Testing this mesage</span>
-        <span>Testing this mesage</span>
-        <span>Testing this mesage</span>
+        <span class="good">Welcome to Ant Colony! Spend eggs to spawn units. Workers increase your food and water collection. Drones increase your egg production. Warriors fend off attacks from foreign ant colonies. Will You be the ultimate Queen?<hr></span>
       </section>
     </section>
   </body>
