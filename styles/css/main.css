@@ -1,0 +1,179 @@
+/* line 6, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* line 14, ../sass/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 17, ../sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 20, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 23, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 27, ../sass/_reset.scss */
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 33, ../sass/_reset.scss */
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* line 38, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 7, ../sass/main.scss */
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100%;
+}
+/* line 14, ../sass/main.scss */
+body .hide {
+  display: none;
+}
+
+/* line 19, ../sass/main.scss */
+section.main-content {
+  width: 80%;
+  margin: 0 10%;
+  text-align: center;
+}
+
+/* line 25, ../sass/main.scss */
+section.resources, section.units {
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+}
+/* line 30, ../sass/main.scss */
+section.resources div, section.units div {
+  width: 33%;
+  float: left;
+}
+/* line 35, ../sass/main.scss */
+section.resources .eggs .amount, section.units .eggs .amount {
+  color: #ccac00;
+}
+/* line 38, ../sass/main.scss */
+section.resources .food .amount, section.units .food .amount {
+  color: brown;
+}
+/* line 41, ../sass/main.scss */
+section.resources .water .amount, section.units .water .amount {
+  color: #0000cc;
+}
+/* line 45, ../sass/main.scss */
+section.resources .rate, section.units .rate {
+  color: green;
+}
+/* line 49, ../sass/main.scss */
+section.resources .upkeep-food, section.units .upkeep-food {
+  color: brown;
+}
+/* line 52, ../sass/main.scss */
+section.resources .upkeep-water, section.units .upkeep-water {
+  color: #0000cc;
+}
+/* line 55, ../sass/main.scss */
+section.resources .upkeep-food, section.resources .upkeep-water, section.units .upkeep-food, section.units .upkeep-water {
+  cursor: help;
+}
+
+/* line 60, ../sass/main.scss */
+section.spawn-tabs {
+  height: 60px;
+  margin-top: 25px;
+}
+/* line 64, ../sass/main.scss */
+section.spawn-tabs div {
+  cursor: pointer;
+  border: solid #3333ff 2px;
+  border-radius: 4px;
+  float: left;
+  width: calc(33.3% - 4px);
+}
+/* line 71, ../sass/main.scss */
+section.spawn-tabs div:hover {
+  background-color: grey;
+  color: white;
+}
+/* line 75, ../sass/main.scss */
+section.spawn-tabs div.active {
+  background-color: grey;
+  color: white;
+}
+/* line 80, ../sass/main.scss */
+section.spawn-tabs > span {
+  display: block;
+}
+
+/* line 86, ../sass/main.scss */
+section.controls > div > span {
+  cursor: pointer;
+  border: solid #3333ff 2px;
+  border-radius: 4px;
+  float: left;
+  width: calc(33.3% - 4px);
+}
+/* line 93, ../sass/main.scss */
+section.controls > div > span div {
+  display: inline;
+}
+/* line 96, ../sass/main.scss */
+section.controls > div > span div.cost {
+  color: #ccac00;
+  cursor: help;
+}
+/* line 101, ../sass/main.scss */
+section.controls > div > span:active {
+  background-color: grey;
+  color: white;
+}
+
+/* line 107, ../sass/main.scss */
+section.history {
+  border: solid grey 2px;
+  border-radius: 4px;
+  margin-top: 25px;
+  height: 200px;
+  overflow-y: scroll;
+  padding: 2%;
+  width: 96%;
+}
+/* line 115, ../sass/main.scss */
+section.history span {
+  display: block;
+  text-align: left;
+}
+
+/* line 121, ../sass/main.scss */
+header {
+  text-align: center;
+  margin: 0 10%;
+  background-color: #6666ff;
+}
